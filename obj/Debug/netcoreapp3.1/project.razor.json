@@ -14412,6 +14412,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\bhumi\\Documents\\AspNetCoreTodo\\AspNetCoreTodo\\Views\\Todo\\Index.cshtml",
+      "TargetPath": "Views\\Todo\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bhumi\\Documents\\AspNetCoreTodo\\AspNetCoreTodo\\Views\\Todo\\AdditemPartial.cshtml",
+      "TargetPath": "Views\\Todo\\AdditemPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\bhumi\\Documents\\AspNetCoreTodo\\AspNetCoreTodo\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

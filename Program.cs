@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -9,9 +10,15 @@ using Microsoft.Extensions.Logging;
 
 namespace AspNetCoreTodo
 {
+    [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public class Program
     {
         public static void Main(string[] args)
+        {
+            NewMethod(args);
+        }
+
+        private static void NewMethod(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
         }
@@ -22,5 +29,10 @@ namespace AspNetCoreTodo
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
+        }
     }
 }
